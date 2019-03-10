@@ -1,6 +1,6 @@
-# RF-algorithms
+# RMRF Manuscript
 
-This program implements five random forest algorithms (RF, SSS, ER, CRAR, and RMRF).
+This program implements RMRF algorithm and results.
 
 The goal of this program is to provide users with the infrastructure to grow their
-own random forests without having to start from scratch.
+own repeated measures random forest and reproduce all the results from the manuscript.
