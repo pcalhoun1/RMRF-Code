@@ -36,7 +36,7 @@ pred_ar_ex <- predictRF(arDep_ex, nights, prediction = "overall", checkCases = T
 # Classify each night as either "Low Risk" (less than avg) or "High Risk" (greater than avg)
 nights$risk <- ifelse(pred_ar_ex < mean(nights$cgmHypo60_30min), "1.Low", "2.High")
 
-# Web Table 7
+# Web Table 8
 library(plyr)
 ddply(nights, ~ risk, summarise, nNights=length(risk), percHypoNights=round(mean(cgmHypo60_30min),3))
 summary(geem((cgmHypo60_30min_Factor == "Yes") ~ risk, data = nights, id = DeidentID, corstr = "exchangeable"))
