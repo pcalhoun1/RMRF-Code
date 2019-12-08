@@ -219,7 +219,7 @@ stepwiseGLMM <- stepwiseSelect(step=1, currentVars=currentVars, remainingVars=re
 #glmmMod <- as.formula(cgmHypo60_30min ~ bedtimeBG + exer_Intensity + daytimeHypo + (1 | DeidentID))
 
 # backwardGLMM when using CV
-#glmmMod <- as.formula(cgmHypo60_30min ~ bedtimeBG + iob_dailyIns + cgmRateChgGrp + exer_Intensity + daytimeHypo + (1 | DeidentID))
+#glmmMod <- as.formula(cgmHypo60_30min ~ bedtimeBG + exer_Intensity + daytimeHypo + (1 | DeidentID))
 
 # Using the same model as RMRF
 #glmmMod <- as.formula(cgmHypo60_30min ~ bedtimeBG + iob_dailyIns + sysStartTmGrp + exer_Intensity + daytimeHypo + (1 | DeidentID))
