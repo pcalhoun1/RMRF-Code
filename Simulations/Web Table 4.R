@@ -10,6 +10,7 @@ simD <- read.csv(paste0("Data/GLM vs RF/sim_glmVsRF_modD_betaLog6sigma3.csv"))
 sim <- rbind(simA, simB, simC, simD)
 
 
+# Web Table 4.  Assess various simulations
 
 metrics <- c("rmrfDep", "rmrfIndep", "erDep", "erIndep", "rfDep", "rfIndep", "glmDep", "glmIndep")
 

@@ -1,6 +1,6 @@
 #rm(list=ls(all=TRUE))
 
-# Web Figure 1 sets beta = log(2)
+# Figure 1 sets beta = log(2)
 sim_onesplit <- read.csv(paste0("Data/One Split/sim_onesplit_night_cutpt3_betaLog2.csv"), header=TRUE)
 
 # Manuscript text also reports results when beta = log(4).  Can load following data instead to show those results
@@ -11,9 +11,9 @@ sim_pctSims <- data.frame(lapply(metrics, function(x){setNames(aggregate(list(si
 sim_pctSims[ , c(1, 2, 6)] #Percentage of simulations with informative variable split
 
 
-# Create Web Figure 1:
+# Create Figure 1:
 
-#tiff("Figures/WebFig1.tiff", width = 4, height = 4, units = "in", pointsize = 12, res=600)
+#tiff("Figures/Fig1.tiff", width = 4, height = 4, units = "in", pointsize = 12, res=600)
 par(mar=c(1.6, 3.9, 0, 0) + 0.1)
 plot(NA, xlim=c(1.8,10.7), ylim=c(0,1), axes=FALSE, xlab="", ylab="")
 mtext("Model", 1, line=0.8, font=2, cex=1.3)

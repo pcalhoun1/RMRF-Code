@@ -2,7 +2,7 @@
 
 library(dplyr)
 
-# Web Table 3 sets beta1 = log(2) and beta2 = log(2)
+# Table 3 sets beta1 = log(2) and beta2 = log(2)
 sim_twosplits <- read.csv(paste0("Data/Two Splits/sim_twosplits_beta1Log2_beta2Log2.csv"), header=TRUE)
 
 # Manuscript text also reports results when beta1 = log(2) and beta2 = log(4), and when beta1 = log(4) and beta2 = log(2).

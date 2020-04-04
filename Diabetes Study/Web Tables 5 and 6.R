@@ -45,7 +45,7 @@ patientMetrics <- patientMetrics[c("factor","level","nNights","pctHypoNights")]
 patientMetrics$pctHypoNights <- round(patientMetrics$pctHypoNights*100, digits=0)
 patientMetrics
 
-### Night-level factors ###
+### Web Table 6. Night-level factors ###
 nightVars <- c("Overall","bedtimeBGGrp","Snack","iob_dailyInsGrp","cgmRateChgGrp","sysStartTmGrp","exer_Intensity","daytimeHypo")
 nightMetrics <- lapply(nightVars, function(x){ddply(.data=nights, c(x,"AlgoActive"), summarize,
                                                     nNights = length(cgmHypo60_30min), pctHypoNights = mean(cgmHypo60_30min))})

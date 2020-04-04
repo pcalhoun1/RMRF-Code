@@ -44,13 +44,13 @@ names(pvaluesDepMisclass)[pvaluesDepMisclass < 0.05]  #Variables that are signif
 names(pvaluesIndepAUC)[pvaluesIndepAUC < 0.05]  #Variables that are significant (p-value < 0.05) ignorning for dependence and using AUC
 
 
-##### Figure 1 #####
+##### Figure 2 #####
 
 vimp <- diabetes_vimp[diabetes_vimp$vimp == "arDep_ex_auc", names(diabetes_vimp) != 'vimp']
 vimpSeq <- seq_along(vimp)
 
 
-#tiff("Figures/Fig1.tiff", width = 5, height = 4, units = "in", pointsize = 12, res=600)
+#tiff("Figures/Fig2.tiff", width = 5, height = 4, units = "in", pointsize = 12, res=600)
 par(mar=c(5.7, 2.5, 0, 0) + 0.1)
 plot(NA, xlim=c(1,13), ylim=c(0,35),  type="n", axes=FALSE, xlab="", ylab="")
 mtext("Importance", 2, font=2, line=1.6, cex=1.2)
@@ -75,10 +75,10 @@ dev.off()
 
 
 
-##### Web Figure 2 #####
+##### Web Figure 1 #####
 
 
-#tiff("Figures/WebFig2.tiff", width = 6, height = 8, units = "in", pointsize = 12, res=600)
+#tiff("Figures/WebFig1.tiff", width = 6, height = 8, units = "in", pointsize = 12, res=600)
 par(mfrow=c(3, 2))
 
 # HbA1c #

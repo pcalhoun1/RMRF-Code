@@ -2,11 +2,11 @@
 
 library(dplyr)
 
-# Table 3 has both night and patient-level factors
+# Table 4 has both night and patient-level factors
 sim_rf <- read.csv(paste0("Data/RF Comparison/sim_rf_nightAndPt_betaLog2.csv"), header=TRUE)
 sim_glm <- read.csv(paste0("Data/RF Comparison/sim_glm_nightAndPt_betaLog2.csv"), header=TRUE)
 
-# Web Table 4 only considers night-level factors.  Can load following data instead to reproduce Web Table 4
+# Web Table 3 only considers night-level factors.  Can load following data instead to reproduce Web Table 3
 #sim_rf <- read.csv(paste0("Data/RF Comparison/sim_rf_night_betaLog2.csv"), header=TRUE)
 #sim_glm <- read.csv(paste0("Data/RF Comparison/sim_glm_night_betaLog2.csv"), header=TRUE)
 
