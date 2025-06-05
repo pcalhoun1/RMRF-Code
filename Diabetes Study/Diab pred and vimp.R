@@ -156,7 +156,7 @@ stepwiseSelect <- function(step=1, currentVars, remainingVars, currentMod, inDat
     
     # Checking if p-values are still significant is tricky with GLMM
     # Simplest is to give an approximate p-value using F table showing the variables are highly significant
-    pvalues <- 1-pf(anova(newMod)$F, anova(newMod)$Df, nrow(inData) - sum(anova(newMod)$Df))
+    pvalues <- 1-pf(anova(newMod)$F, anova(newMod)$npar, nrow(inData) - sum(anova(newMod)$npar))
     print(paste0("STEP ", step+1, ": Highest p-value is approximately ", round(max(pvalues), 3)))
     
     stepwiseSelect(step = step + 2, currentVars = newVars, remainingVars = remainingVars, currentMod = newMod, inData = inData)
